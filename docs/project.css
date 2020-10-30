@@ -1,0 +1,193 @@
+/* Dropdown za gumbe */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+   }
+                
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    z-index: 1;
+   }
+              
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: .9rem;
+    line-height: 1;
+   }
+                
+.dropdown-content a:hover {background-color: #ddd}
+                
+.dropdown-content a.active {
+    color: #8e130b;
+   }
+                
+.dropdown:hover .dropdown-content {
+    display: block;
+   }
+                
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+   }
+
+/* Dropdown za razlago kodirane vsebine */
+.term {
+    position: relative;
+    display: inline-block;
+    text-indent: 0em;
+    margin: 0;
+   }
+
+/*.explain {
+    display: none;
+    position: absolute;
+    color: #0a0a0a;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    padding: 5px;
+    text-indent: 0em;
+    font-size: 0.8rem;
+    font-weight: normal;
+    z-index: 1;
+   }*/
+   
+.explain {
+    display: none;
+    position: relative;
+    color: #0a0a0a;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    padding: 5px;
+    text-indent: 0em;
+    font-size: 0.8rem;
+    font-weight: normal;
+    z-index: 1;
+}
+
+.explain {background-color: #ddd}
+                
+.term:hover {
+    border-style: solid;
+    border-width: thin;
+   }
+
+/* Stran tei:fw. Ker ga pri float čisto desno moti slika, ga premaknem v desno za fiksni margin */
+.pageNum {
+    font-family:Sans-Serif;
+    font-size:70%;
+    color:grey;
+    display: inline-block;
+    margin-left:30em;
+}
+
+/* stage */
+.stage {
+    display: block;
+    font-size: .8125rem;
+    color: #8a8a8a;
+}
+.stage:before {
+    content:"(";
+}
+.stage:after {
+    content:")";
+}
+
+/* tei:ab */
+.padding {
+    margin-top:1ex;
+    margin-bottom:1ex;
+    text-indent:5em;
+}
+
+/* teihandShift */
+span.handShift {
+    font-variant:small-caps;
+    font-size:large;
+    font-weight:bold;
+    color:#8e130b;
+}
+
+/* različni: tei:choice */
+span.choice {
+    color: #8e130b;
+}
+
+/* povdarjeni deli besedila */
+span.emph {
+    color: #8e130b;
+    font-weight: bold;
+}
+
+
+/* tei:hi (Večina je italic) */
+.hi {
+    font-style: italic;
+}
+
+/* za novi tei:pb in tei:milestone */
+.pb {
+    display: block;
+    float: right;
+}
+.milestone {
+    display: block;
+    float: right;
+}
+
+/* Siva obroba okoli vsebine */
+.border-content {
+    border: thin solid;
+    border-color: #8a8a8a;
+}
+
+.border-content-inner {
+    border-style: solid;
+    border-width: thin thin 0 thin;
+    border-color: #8a8a8a;
+}
+
+span.unclear {
+    background-color: #C0C0C0;
+}
+
+span.has-tip {
+    text-indent: 0em;
+    border-bottom: none;
+    display: initial;
+}
+
+/* loader */
+.preloader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #8e130b;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
